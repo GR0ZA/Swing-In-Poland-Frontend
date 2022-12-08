@@ -1,7 +1,13 @@
 <template>
   <div>
+    <h1>TEST</h1>
+    <h2>TEST</h2>
+    <h3>TEST</h3>
+    <h4>TEST</h4>
+    <h5>TEST</h5>
+    <h6>TEST</h6>
     <p>{{ title }}</p>
-    <button @click="getEvents">Get Events</button>
+    <q-btn @click="getEvents" color="primary" label="Get Events" />
   </div>
 </template>
 

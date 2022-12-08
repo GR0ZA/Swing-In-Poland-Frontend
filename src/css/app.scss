@@ -1,1 +1,30 @@
 // app global css in SCSS form
+
+@font-face {
+  font-family: montserrat-regular;
+  src: url(./fonts/Montserrat-Regular.woff);
+}
+
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(./fonts/Montserrat-SemiBold.woff);
+}
+
+@font-face {
+  font-family: montserrat-light;
+  src: url(./fonts/Montserrat-Light.woff);
+}
+
+// declare a class which applies it
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'montserrat-semibold';
+}
+
+* {
+  font-family: 'montserrat-regular';
+}
