@@ -1,7 +1,8 @@
 import { ApiResponse } from 'src/entities/api-response';
 import { IEventsService } from './events-i.service';
+import axios from 'src/plugins/axios';
 
-const api = '/events';
+const api = '/posts';
 
 export class EventsApiService implements IEventsService {
   getEvents(): Promise<ApiResponse> {
