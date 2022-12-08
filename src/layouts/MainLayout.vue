@@ -1,14 +1,12 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
-        <q-toolbar-title> Swing in Poland </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
+  <q-layout view="hHh Lpr fFf">
+    <nav-bar />
     <q-page-container>
       <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import NavBar from 'src/components/general/NavBar.vue';
+</script>
