@@ -4,13 +4,27 @@
       <q-toolbar-title class="row justify-center">
         Swing in Poland
       </q-toolbar-title>
-      <q-btn @click="login" icon="login" />
+      <q-btn v-if="isUserLoggedIn" @click="logoutUser" icon="logout" />
+      <q-btn v-else @click="loginUser" icon="login" />
     </q-toolbar>
   </q-header>
 </template>
 
 <script setup lang="ts">
-function login(): void {
-  console.warn('LOGIN: Not implemented yet.');
+import { computed } from 'vue';
+import { useAuth0 } from '@auth0/auth0-vue';
+
+const { loginWithRedirect, logout, user } = useAuth0();
+
+function loginUser(): void {
+  loginWithRedirect();
 }
+
+function logoutUser(): void {
+  logout();
+}
+
+const isUserLoggedIn = computed(() => {
+  return user.value;
+});
 </script>
