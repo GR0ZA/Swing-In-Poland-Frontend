@@ -26,7 +26,7 @@ interface Props {
   event: SwingEvent;
 }
 
-const props = defineProps<Props>();
+defineProps<Props>();
 </script>
 
 <style scoped lang="scss">
