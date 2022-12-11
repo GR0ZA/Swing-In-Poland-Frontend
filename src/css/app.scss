@@ -15,20 +15,49 @@
   src: url(./fonts/Montserrat-Light.woff);
 }
 
-// declare a class which applies it
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  color: $primary;
   font-family: 'montserrat-semibold';
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1.125rem;
 }
 
 * {
   font-family: 'montserrat-regular';
 }
 
+a {
+  color: $primary;
+}
+
 body {
+  color: $primary;
   background-color: $background;
 }
