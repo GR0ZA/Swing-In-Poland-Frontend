@@ -13,6 +13,7 @@
       <q-btn
         color="primary"
         label="Pokaż więcej wydarzeń"
+        class="text-bold"
         @click="loadMoreEvents"
       />
     </div>
