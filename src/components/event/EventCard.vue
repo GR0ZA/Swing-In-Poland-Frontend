@@ -31,9 +31,10 @@ defineProps<Props>();
 
 <style scoped lang="scss">
 .event-card {
+  max-height: 200px;
   background-color: $card-background;
   .event-image {
-    max-height: 200px;
+    height: 200px;
   }
 }
 </style>

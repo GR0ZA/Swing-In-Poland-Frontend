@@ -2,6 +2,7 @@
   <q-header elevated>
     <q-toolbar>
       <q-toolbar-title>Swing in Poland</q-toolbar-title>
+      <q-btn v-if="isUserLoggedIn" to="/management" icon="settings" />
       <q-btn v-if="isUserLoggedIn" @click="logoutUser" icon="logout" />
       <q-btn v-else @click="loginUser" icon="login" />
     </q-toolbar>

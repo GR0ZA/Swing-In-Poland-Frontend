@@ -1,14 +1,21 @@
 <template>
-  <q-page class="q-pa-xl column">
+  <q-page class="column">
     <page-header class="q-pb-lg" />
     <q-checkbox
       class="q-px-xl q-pb-sm"
       v-model="showConfirmed"
       @update:model-value="onCheckboxChange"
       label="Pokaż tylko potwierdzone wydarzenia"
-      color="$primary"
+      color="primary"
     />
     <event-list />
+    <div class="q-pt-sm self-center">
+      <q-btn
+        color="primary"
+        label="Pokaż więcej wydarzeń"
+        @click="loadMoreEvents"
+      />
+    </div>
   </q-page>
 </template>
 
@@ -21,5 +28,9 @@ let showConfirmed = ref(false);
 
 function onCheckboxChange(): void {
   console.log('Change!');
+}
+
+function loadMoreEvents(): void {
+  console.log('Load more events!');
 }
 </script>

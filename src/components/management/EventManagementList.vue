@@ -1,15 +1,15 @@
 <template>
-  <div class="q-px-xl q-py-md" v-for="event in events" :key="event.id">
-    <event-card :event="event" />
+  <div class="q-py-sm" v-for="event in events" :key="event.id">
+    <event-management-card :event="event" />
   </div>
 </template>
 
 <script setup lang="ts">
-import EventCard from './EventCard.vue';
+import EventManagementCard from './EventManagementCard.vue';
 
 let events = [
   {
-    id: 1,
+    id: 0,
     title: 'Praktis!',
     date: 'Dzisiaj • 21:00 - 01:00',
     address: 'Wielka 19/7, Poznań',
@@ -18,7 +18,7 @@ let events = [
     image: 'https://i.ytimg.com/vi/R2fOXATC9dg/maxresdefault.jpg',
   },
   {
-    id: 2,
+    id: 1,
     title: 'Wprawki swingowe w Dublinerze',
     date: '14 listopada 22 • 20:00 - 01:00',
     address: 'SARP social club, Stary Rynek 56, Poznań',
@@ -28,7 +28,7 @@ let events = [
       'https://swingcraze.pl/wp-content/uploads/2016/11/2016_WprawkiSwingCraze-768x288.jpg',
   },
   {
-    id: 3,
+    id: 2,
     title: 'Swing in Poland',
     date: '1 stycznia 2023 • 18:00 - 01:00',
     address: 'Ulica numer, Poznań',
