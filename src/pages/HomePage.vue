@@ -2,7 +2,7 @@
   <q-page class="column">
     <page-header class="q-pb-lg" />
     <q-checkbox
-      class="q-px-xl q-pb-sm"
+      class="q-px-xs-xs q-px-sm-lg q-px-md-xl"
       v-model="showConfirmed"
       @update:model-value="onCheckboxChange"
       label="Pokaż tylko potwierdzone wydarzenia"

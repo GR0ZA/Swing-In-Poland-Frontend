@@ -1,5 +1,5 @@
 <template>
-  <q-header elevated>
+  <q-header elevated reveal>
     <q-toolbar>
       <q-toolbar-title>Swing in Poland</q-toolbar-title>
       <q-btn v-if="isUserLoggedIn" to="/management" icon="settings" />

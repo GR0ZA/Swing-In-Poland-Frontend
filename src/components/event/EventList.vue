@@ -1,5 +1,9 @@
 <template>
-  <div class="q-px-xl q-py-md" v-for="event in events" :key="event.id">
+  <div
+    class="q-px-xs-xs q-py-xs-sm q-px-sm-lg q-py-sm-md q-px-md-xl"
+    v-for="event in events"
+    :key="event.id"
+  >
     <event-card :event="event" />
   </div>
 </template>
