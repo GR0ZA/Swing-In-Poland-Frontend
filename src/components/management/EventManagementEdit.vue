@@ -56,13 +56,18 @@
       </div>
 
       <div>
-        <q-btn label="Zapisz" type="submit" color="primary" class="text-bold" />
+        <q-btn
+          label="Zapisz"
+          type="submit"
+          color="primary"
+          class="text-bold text-overline"
+        />
         <q-btn
           label="Anuluj"
           type="reset"
           color="primary"
           outline
-          class="q-ml-sm text-bold"
+          class="q-ml-sm text-bold text-overline"
         />
       </div>
     </q-form>

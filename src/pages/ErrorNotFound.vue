@@ -1,27 +1,16 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
-        404
-      </div>
-
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
-
+      <div style="font-size: 30vh">404</div>
+      <div style="font-size: 4vh">Ups. Nic tu nie ma.</div>
       <q-btn
         class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
+        color="primary text-bold text-overline"
         to="/"
-        label="Go Home"
-        no-caps
+        label="Strona Główna"
       />
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>

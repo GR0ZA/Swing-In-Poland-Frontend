@@ -5,7 +5,7 @@
     <div class="row justify-between q-mb-md">
       <h4 class="q-my-none">Wydarzenia dla miasta Poznań</h4>
       <q-btn
-        class="self-end text-bold"
+        class="self-end text-bold text-overline"
         color="primary"
         label="Dodaj wydarzenie"
       />

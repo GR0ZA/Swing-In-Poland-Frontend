@@ -14,7 +14,7 @@
               color="primary"
               square
               outline
-              class="q-ml-sm text-bold"
+              class="q-ml-sm text-bold text-overline"
             />
           </q-card-actions>
         </q-card-section>
