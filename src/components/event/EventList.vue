@@ -20,6 +20,7 @@ let events = [
     organisator: 'Retro Dance Studio',
     link: 'https://localhost:9000/#',
     image: 'https://i.ytimg.com/vi/R2fOXATC9dg/maxresdefault.jpg',
+    status: 0,
   },
   {
     id: 2,
@@ -30,6 +31,7 @@ let events = [
     link: 'https://localhost:9000/#',
     image:
       'https://swingcraze.pl/wp-content/uploads/2016/11/2016_WprawkiSwingCraze-768x288.jpg',
+    status: 0,
   },
   {
     id: 3,
@@ -40,6 +42,18 @@ let events = [
     link: 'https://localhost:9000/#',
     image:
       'https://swingcraze.pl/wp-content/uploads/2019/08/2019_KursWestCoastSwingDlaZnajacychPodstawy-700x368.jpg',
+    status: 0,
+  },
+  {
+    id: 3,
+    title: 'Swing in Poland',
+    date: '8 stycznia 2023 • 18:00 - 01:00',
+    address: 'Ulica numer, Poznań',
+    organisator: 'Swing in Poland',
+    link: 'https://localhost:9000/#',
+    image:
+      'https://swingcraze.pl/wp-content/uploads/2019/08/2019_KursWestCoastSwingDlaZnajacychPodstawy-700x368.jpg',
+    status: 1,
   },
 ];
 </script>

@@ -6,4 +6,5 @@ export interface SwingEvent {
   organisator: string;
   link: string;
   image: string;
+  status: number;
 }

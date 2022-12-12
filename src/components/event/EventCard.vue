@@ -1,8 +1,16 @@
 <template>
   <q-card class="event-card" flat square>
     <q-card-section class="row" horizontal>
-      <q-img class="col-4 event-image" :src="event.image" />
-
+      <q-img
+        class="col-4 event-image"
+        img-class="my-custom-image"
+        :src="event.image"
+        :img-style="event.status === 1 ? { filter: 'grayscale()' } : ''"
+      >
+        <div v-if="event.status === 1" class="absolute-bottom">
+          Wydarzenie czeka na potwierdzenie przez organizatora
+        </div>
+      </q-img>
       <q-card-actions vertical class="q-pa-lg row justify-between">
         <span>{{ event.date }}</span>
         <h5 class="q-ma-none">{{ event.title }}</h5>
