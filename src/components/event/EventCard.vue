@@ -5,9 +5,11 @@
         class="col-4 event-image"
         img-class="my-custom-image"
         :src="event.image"
-        :img-style="event.status === 1 ? { filter: 'grayscale()' } : ''"
+        :img-style="
+          !event.confirmed ? { filter: 'grayscale()' } : { filter: 'none' }
+        "
       >
-        <div v-if="event.status === 1" class="absolute-bottom">
+        <div v-if="!event.confirmed" class="absolute-bottom">
           Wydarzenie czeka na potwierdzenie przez organizatora
         </div>
       </q-img>

@@ -16,6 +16,7 @@ let events = [
     organisator: 'Retro Dance Studio',
     link: 'https://localhost:9000/#',
     image: 'https://i.ytimg.com/vi/R2fOXATC9dg/maxresdefault.jpg',
+    confirmed: true,
   },
   {
     id: 1,
@@ -26,6 +27,7 @@ let events = [
     link: 'https://localhost:9000/#',
     image:
       'https://swingcraze.pl/wp-content/uploads/2016/11/2016_WprawkiSwingCraze-768x288.jpg',
+    confirmed: true,
   },
   {
     id: 2,
@@ -36,6 +38,7 @@ let events = [
     link: 'https://localhost:9000/#',
     image:
       'https://swingcraze.pl/wp-content/uploads/2019/08/2019_KursWestCoastSwingDlaZnajacychPodstawy-700x368.jpg',
+    confirmed: true,
   },
   {
     id: 3,
@@ -47,6 +50,7 @@ let events = [
     image:
       'https://swingcraze.pl/wp-content/uploads/2019/08/2019_KursWestCoastSwingDlaZnajacychPodstawy-700x368.jpg',
     status: 2,
+    confirmed: false,
   },
 ];
 </script>
